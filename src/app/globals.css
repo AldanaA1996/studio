@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 43 50% 97%; /* #FAF7F0 light desaturated beige */
-    --foreground: 40 10% 25%; /* Dark grayish brown */
+    --background: 43 50% 97%; 
+    --foreground: 40 10% 25%; 
 
     --card: 43 50% 100%; /* White */
     --card-foreground: 40 10% 25%;
@@ -13,8 +13,8 @@
     --popover: 43 50% 100%;
     --popover-foreground: 40 10% 25%;
 
-    --primary: 46 33% 70%; /* #CFBC97 soft, natural green */
-    --primary-foreground: 40 10% 20%; /* Darker text for primary */
+    --primary: 40 27% 81%; /* #CFBC97 COLOR DEL LOGO*/
+    --primary-foreground: 40 25% 50%; /* Darker text for primary */
 
     --secondary: 43 30% 90%; /* Lighter beige */
     --secondary-foreground: 40 10% 30%;

@@ -12,8 +12,8 @@ interface WhatsAppButtonProps {
 
 export function WhatsAppButton({
   phoneNumber,
-  message = "Hello, I'd like to schedule an appointment.",
-  label = "Book an Appointment",
+  message = "Hola, me gustaria reservar un turno.",
+  label = "Reserva tu turno",
   className,
 }: WhatsAppButtonProps) {
   const handleWhatsAppRedirect = () => {
@@ -29,7 +29,7 @@ export function WhatsAppButton({
       size="lg"
       className={`bg-accent hover:bg-accent/90 text-accent-foreground shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 ${className}`}
     >
-      <MessageCircle className="mr-2 h-5 w-5" />
+      <MessageCircle className="mr-2 h-8 w-8" />
       {label}
     </Button>
   );

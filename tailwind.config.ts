@@ -11,7 +11,9 @@ export default {
     extend: {
       fontFamily: {
         body: ['Alegreya', 'serif'],
-        headline: ['Playfair Display', 'serif'],
+        headline: ['ltc-metropolitan-pro', 'serif'],
+        display: ['p22-allyson-pro', 'serif'],
+        text: ['Lexend Giga', 'serif'],
         code: ['monospace'],
       },
       colors: {
