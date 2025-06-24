@@ -1,41 +1,62 @@
 import Image from 'next/image';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/ui/card';
+
+const about = [
+  {
+    title: "Profesional en Cosmetología Natural",
+    description: [
+      "Con más de 15 años de experiencia en terapias naturales y bienestar holístico, Alejandra Cattaneo se dedica a guiar a sus clientes hacia el rejuvenecimiento y el equilibrio integral.",
+      "Su enfoque combina sabiduría ancestral con conocimientos modernos, brindando tratamientos personalizados que nutren el cuerpo y la mente.",
+      "Especializada en masajes faciales, fitoterapia y cosmetología natural, Alejandra ofrece un cuidado atento y adaptado a las necesidades únicas de cada cliente."
+    ],
+    image: "/images/aboutmeBG.png",
+    alt: "Fondo de texto sobre cosmética natural"
+  }
+];
 
 export function ProfessionalBioSection() {
   return (
-    <section id="professional" className="py-16 md:py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-12 md:mb-16 text-primary">
-          Meet Our Professional
+    <section
+      id="professional"
+      className="relative min-h-screen flex flex-col justify-center items-center bg-background py-16"
+    >
+      <div className="container mx-auto px-4 flex flex-col items-center">
+        <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-10 text-primary">
+          Sobre Mí
         </h2>
-        <Card className="overflow-hidden shadow-xl md:max-w-4xl mx-auto bg-card animate-fade-in-up opacity-0">
-          <div className="md:flex">
-            <div className="md:w-1/3 relative h-64 md:h-auto">
+
+        <Card className="overflow-hidden shadow-xl w-full bg-card animate-fade-in-up opacity-0 
+                        max-w-xl md:max-w-3xl lg:max-w-5xl">
+          <div className="flex flex-col md:flex-row">
+
+            {/* Imagen */}
+            <div className="relative w-full h-64 md:w-1/3 md:h-[500px] lg:h-[550px]">
               <Image
-                src="https://placehold.co/400x600.png"
-                alt="Professional at Kaûna"
-                layout="fill"
-                objectFit="cover"
-                className="rounded-t-lg md:rounded-l-lg md:rounded-t-none"
-                data-ai-hint="professional portrait therapist"
+                src="/images/ale.jpg"
+                alt="Retrato de Alejandra Cattaneo"
+                fill
+                className="object-cover object-center"
+                priority
               />
             </div>
-            <div className="md:w-2/3">
-              <CardHeader>
-                <CardTitle className="text-3xl font-headline text-foreground">Dr. Elara Vance</CardTitle>
-              </CardHeader>
-              <CardContent className="text-muted-foreground space-y-4 text-lg">
-                <p>
-                  With over 15 years of experience in holistic wellness and natural therapies, Dr. Elara Vance is dedicated to guiding you on your path to rejuvenation and balance.
-                </p>
-                <p>
-                  Her approach combines ancient wisdom with modern understanding, focusing on personalized treatments that nurture both body and mind. She is passionate about empowering individuals to achieve optimal health through natural means.
-                </p>
-                <p>
-                  Specializing in advanced facial massage techniques, phytotherapy applications, and bespoke natural cosmetology, Dr. Vance ensures every client receives compassionate care tailored to their unique needs.
-                </p>
-              </CardContent>
-            </div>
+
+            {/* Contenido */}
+            <CardContent
+              className="relative md:w-2/3 p-6 md:p-8 flex flex-col justify-center text-foreground"
+              style={{
+                backgroundImage: `url(${about[0].image})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}
+            >
+              <div className="absolute inset-0 "></div>
+              <div className="relative z-10 space-y-4 text-base md:text-lg leading-relaxed">
+                {about[0].description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
+            </CardContent>
+
           </div>
         </Card>
       </div>

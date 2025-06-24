@@ -7,28 +7,28 @@
     --background: 43 50% 97%; 
     --foreground: 40 10% 25%; 
 
-    --card: 43 50% 100%; /* White */
+    --card: 43 50% 100%; 
     --card-foreground: 40 10% 25%;
 
     --popover: 43 50% 100%;
     --popover-foreground: 40 10% 25%;
 
-    --primary: 40 27% 81%; /* #CFBC97 COLOR DEL LOGO*/
+    --primary: 40 27% 81%; 
     --primary-foreground: 40 25% 50%; /* Darker text for primary */
 
-    --secondary: 43 30% 90%; /* Lighter beige */
+    --secondary: 43 30% 90%; 
     --secondary-foreground: 40 10% 30%;
 
-    --muted: 43 25% 85%; /* Muted beige */
+    --muted: 43 25% 85%; 
     --muted-foreground: 40 10% 45%;
 
-    --accent: 81 12% 53%; /* #889577 muted terracotta */
+    --accent: 81 12% 53%; 
     --accent-foreground: 43 50% 97%; /* Background color for text on accent */
 
     --destructive: 0 70% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 43 20% 88%; /* Subtle border */
+    --border: 43 20% 88%; 
     --input: 43 20% 92%;
     --ring: 46 33% 70%; /* Primary color for focus rings */
 
@@ -51,8 +51,8 @@
   }
 
   .dark {
-    --background: 40 10% 10%; /* Very dark grayish brown */
-    --foreground: 43 30% 90%; /* Light beige */
+    --background: 40 10% 10%;
+    --foreground: 43 30% 90%; 
 
     --card: 40 10% 15%;
     --card-foreground: 43 30% 90%;

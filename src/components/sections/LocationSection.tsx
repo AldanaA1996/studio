@@ -16,7 +16,7 @@ export function LocationSection() {
     <section id="location" className="py-16 md:py-24 bg-secondary">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-12 md:mb-16 text-primary">
-          Visit Us
+          Visitanos
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-start">
@@ -25,14 +25,14 @@ export function LocationSection() {
               <CardHeader>
                 <CardTitle className="text-2xl font-headline text-foreground flex items-center">
                   <MapPin className="mr-3 h-6 w-6 text-primary" />
-                  Our Address
+                  Dirección
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-lg">
-                <p>123 Wellness Lane</p>
-                <p>Serenity City, ST 12345</p>
+                <p>Rauch 186, Bragado 6640</p>
+                <p>Buenos Aires, Argentina</p>
                 <p className="mt-4">
-                  <a href="mailto:contact@kauna.com" className="hover:text-primary transition-colors">contact@kauna.com</a>
+                  <a href="mailto:kaunabragado@gmail.com" className="hover:text-primary transition-colors">kaunabragado@gmail.com</a>
                 </p>
               </CardContent>
             </Card>
@@ -41,7 +41,7 @@ export function LocationSection() {
               <CardHeader>
                 <CardTitle className="text-2xl font-headline text-foreground flex items-center">
                   <Clock className="mr-3 h-6 w-6 text-primary" />
-                  Opening Hours
+                  Horarios de Atención
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-muted-foreground text-lg">
@@ -55,7 +55,7 @@ export function LocationSection() {
               <CardHeader>
                 <CardTitle className="text-2xl font-headline text-foreground flex items-center">
                   <Phone className="mr-3 h-6 w-6 text-primary" />
-                  Contact Us
+                  Contactame
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -71,14 +71,14 @@ export function LocationSection() {
               </CardHeader>
               <CardContent>
                 <div className="aspect-video rounded-lg overflow-hidden border border-border">
-                  <Image
-                    src="https://placehold.co/800x450.png"
-                    alt="Map showing Kaûna location"
-                    width={800}
-                    height={450}
-                    className="w-full h-full object-cover"
-                    data-ai-hint="city map placeholder"
-                  />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3263.5983228580226!2d-60.486717024434775!3d-35.1167396727746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bedc2b8ffce1ed%3A0xd95dc9541ae8de3d!2sRauch%20186%2C%20B6640%20Bragado%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1750729173703!5m2!1ses!2sar" 
+                          width="100%" 
+                          height="100%" 
+                          style= {{border:0}}
+                          allowFullScreen= {true}
+                          loading="lazy" 
+                          referrerPolicy="no-referrer-when-downgrade">
+                  </iframe>
                 </div>
               </CardContent>
             </Card>

@@ -1,5 +1,8 @@
 import { KaunaLogo } from '@/components/icons/Logo';
 import { Facebook, Instagram, Twitter } from 'lucide-react';
+import { IgIcon } from '../icons/IgIcon';
+import { SocialLinks } from '../ui/socialButtons';
+
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,24 +14,18 @@ export function Footer() {
           <KaunaLogo className="h-12 text-primary w-auto" />
         </div>
         <p className="mb-4">
-          123 Wellness Lane, Serenity City, ST 12345
+         Rauch 186, Bragado, Buenos Aires, Argentina
         </p>
         <div className="flex justify-center space-x-6 mb-8">
-          <a href="#" aria-label="Facebook" className="text-muted-foreground hover:text-primary transition-colors">
-            <Facebook size={24} />
-          </a>
-          <a href="#" aria-label="Instagram" className="text-muted-foreground hover:text-primary transition-colors">
-            <Instagram size={24} />
-          </a>
-          <a href="#" aria-label="Twitter" className="text-muted-foreground hover:text-primary transition-colors">
-            <Twitter size={24} />
-          </a>
+          <SocialLinks />
+          
+          
         </div>
         <p className="text-sm">
-          &copy; {currentYear} Kaûna Wellness Center. All rights reserved.
+          &copy; {currentYear} Kaûna Estudio Cosmetológico. All rights reserved.
         </p>
         <p className="text-xs mt-2">
-          Designed with <span className="text-primary">&hearts;</span> by Nature&apos;s Touch
+          Designed with <span className="text-primary">&hearts;</span> by StrayDev
         </p>
       </div>
     </footer>

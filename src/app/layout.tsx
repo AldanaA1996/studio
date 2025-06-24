@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Kaûna - Wellness Center',
-  description: 'Holistic wellness services including facial massages, phytotherapy, and natural cosmetology.',
+  title: 'Kaûna - Estudio Cosmetológico Integral',
+  description: 'Un espacio de cuidado integral, combinando técnicas de cosmetología natural, masajes faciales y fitoterapia.',
 };
 
 export default function RootLayout({
