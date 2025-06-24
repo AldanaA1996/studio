@@ -1,30 +1,46 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { SmilePlus, Leaf, Flower } from "lucide-react";
+import { WhatsAppButton } from "../ui/WhatsAppButton";
+import {
+  WHATSAPP_NUMBER,
+  WHATSAPP_MASAJE_LABEL,
+  WHATSAPP_MASAJE_MESSAGE,
+  WHATSAPP_FITOTERAPIA_LABEL,
+  WHATSAPP_FITOTERAPIA_MESSAGE,
+  WHATSAPP_COSMETOLOGIA_LABEL,
+  WHATSAPP_COSMETOLOGIA_MESSAGE,
+} from "@/config/constants";
 
 const services = [
   {
-    icon: <SmilePlus className="h-12 w-12 text-primary mb-4" />,
+    icon: <SmilePlus className="h-12 w-12 text-primary" />,
     title: "Masajes Faciales",
     description:
       "Los masajes faciales son una técnica suave y profunda que estimula la circulación, relaja los músculos del rostro y ayuda a reducir signos de tensión. Además, favorecen la luminosidad natural de la piel, brindando una sensación de bienestar y frescura inmediata.",
     delay: "animation-delay-0",
-    image: "/images/card2.png",
+    image: "/images/card1.png",
+    btnLabel: WHATSAPP_MASAJE_LABEL,
+    btnMessage: WHATSAPP_MASAJE_MESSAGE,
   },
   {
-    icon: <Leaf className="h-12 w-12 text-primary mb-4" />,
+    icon: <Leaf className="h-12 w-12 text-primary" />,
     title: "Fitoterapia",
     description:
       "La fitoterapia utiliza el poder curativo de las plantas para promover el equilibrio y la salud integral. A través de infusiones, aceites y preparados naturales, buscamos apoyar los procesos del cuerpo y realzar la belleza desde el interior.",
     delay: "animation-delay-200",
-    image: "/images/card1.png",
+    image: "/images/card2.png",
+    btnLabel: WHATSAPP_FITOTERAPIA_LABEL,
+    btnMessage: WHATSAPP_FITOTERAPIA_MESSAGE,
   },
   {
-    icon: <Flower className="h-12 w-12 text-primary mb-4" />,
+    icon: <Flower className="h-12 w-12 text-primary" />,
     title: "Cosmetología Natural",
     description:
       "La cosmetología natural se centra en el cuidado de la piel utilizando ingredientes puros y respetuosos con el organismo. Tratamientos sencillos, efectivos y libres de químicos agresivos para mantener la piel saludable, luminosa y en armonía con la naturaleza.",
     delay: "animation-delay-400",
     image: "/images/card3.png",
+    btnLabel: WHATSAPP_COSMETOLOGIA_LABEL,
+    btnMessage: WHATSAPP_COSMETOLOGIA_MESSAGE,
   },
 ];
 
@@ -36,7 +52,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div key={index} className={`animate-fade-in-up ${service.delay} opacity-0`}>
               <Card
-                className="relative flex flex-col justify-center text-center shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden w-full max-w-sm h-[500px] sm:h-[550px] md:h-[600px]"
+                className="relative flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden w-full max-w-sm h-[550px] md:h-[600px]"
                 style={{
                   backgroundImage: `url(${service.image})`,
                   backgroundSize: "cover",
@@ -44,19 +60,30 @@ export function ServicesSection() {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                {/* Overlay oscuro para que el texto se lea bien */}
-                <div className="absolute inset-0 "></div>
+                <div className="relative z-10 flex flex-col items-center justify-center flex-grow p-6 gap-6">
+                  {/* Icono + Título */}
+                  <div className="flex flex-col items-center space-y-2">
+                    {service.icon}
+                    <h3 className="text-4xl md:text-3xl font-headline font-light text-primary-foreground">
+                      {service.title}
+                    </h3>
+                  </div>
 
-                <CardHeader className="relative z-10 items-center">
-                  {service.icon}
-                  <CardTitle className="text-2xl sm:text-3xl font-headline font-light text-primary-foreground">{service.title}</CardTitle>
-                </CardHeader>
+                  {/* Descripción */}
+                  <div className="min-h-[180px] flex items-center justify-center w-full px-4">
+                    <p className="text-lg text-primary-foreground text-center">
+                      {service.description}
+                    </p>
+                  </div>
 
-                <CardContent className="relative z-10 p-4">
-                  <CardDescription className="text-sm sm:text-base font-bold text-primary-foreground">
-                    {service.description}
-                  </CardDescription>
-                </CardContent>
+                  {/* Botón */}
+                  <WhatsAppButton
+                    phoneNumber={WHATSAPP_NUMBER}
+                    label={service.btnLabel}
+                    message={service.btnMessage}
+                    className="w-fit py-2 bg-primary text-primary-foreground"
+                  />
+                </div>
               </Card>
             </div>
           ))}

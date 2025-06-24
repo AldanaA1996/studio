@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export function SocialLinks() {
   return (
     <div className="flex space-x-6">
       <Link
-        href="https://www.instagram.com/tu_perfil"
+        href="https://www.instagram.com/studio.kauna?igsh=emJndjZ0Y2VsZTB2"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Instagram"
@@ -13,17 +13,9 @@ export function SocialLinks() {
       >
         <FaInstagram className="w-6 h-6" />
       </Link>
+      
       <Link
-        href="https://www.facebook.com/tu_perfil"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Facebook"
-        className="text-muted-foreground hover:text-primary transition-colors hover:scale-110"
-      >
-        <FaFacebook className="w-6 h-6" />
-      </Link>
-      <Link
-        href="https://wa.me/tu_numero?text=¡Hola!%20Quiero%20más%20información."
+        href="https://wa.me/2342470427?text=¡Hola!%20Quiero%20más%20información%20sobre%20los%20servicios."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp"

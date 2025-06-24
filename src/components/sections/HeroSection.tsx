@@ -4,8 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
 import { Leaf } from '../icons/Leaf';
-
-const phoneNumber = "2342470427"; 
+import { WHATSAPP_NUMBER } from '@/config/constants';
 
 export function HeroSection() {
   const [isMobile, setIsMobile] = useState(false);
@@ -48,7 +47,7 @@ export function HeroSection() {
         </p>
 
         <WhatsAppButton
-          phoneNumber={phoneNumber}
+          phoneNumber={WHATSAPP_NUMBER}
           label={isMobile ? "Agenda tu momento" : "Agenda tu momento de cuidado y bienestar"}
           className={`h-14 ${isMobile ? "w-auto text-base" : "w-auto text-lg"}`}
         />

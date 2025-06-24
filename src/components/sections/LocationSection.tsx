@@ -2,8 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Clock, Phone } from 'lucide-react';
 import { WhatsAppButton } from '@/components/ui/WhatsAppButton';
-
-const phoneNumber = "12345678900"; // Replace with actual phone number
+import { WHATSAPP_NUMBER } from '@/config/constants';
 
 const locationImages = [
   { src: "https://placehold.co/600x400.png", alt: "Kaûna center interior 1", hint: "spa interior" },
@@ -59,7 +58,7 @@ export function LocationSection() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <WhatsAppButton phoneNumber={phoneNumber} label="Book via WhatsApp" className="w-full" />
+                <WhatsAppButton phoneNumber={WHATSAPP_NUMBER} label="Book via WhatsApp" className="w-full" />
               </CardContent>
             </Card>
           </div>
