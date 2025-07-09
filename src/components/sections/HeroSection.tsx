@@ -19,7 +19,7 @@ export function HeroSection() {
   return (
     <section id="hero" className="relative min-h-[100vh] flex flex-1 items-center overflow-hidden">
       <Image
-        src="/images/titleBG.png"
+        src="/images/titleBG.webp"
         alt="Serene wellness background"
         fill
         style={{ objectFit: "cover", objectPosition: "left" }}

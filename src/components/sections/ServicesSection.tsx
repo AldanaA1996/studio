@@ -34,9 +34,9 @@ const services = [
   },
   {
     icon: <Flower className="h-12 w-12 text-primary" />,
-    title: "Cosmetología Natural",
+    title: "Fitodermocosmética",
     description:
-      "La cosmetología natural se centra en el cuidado de la piel utilizando ingredientes puros y respetuosos con el organismo. Tratamientos sencillos, efectivos y libres de químicos agresivos para mantener la piel saludable, luminosa y en armonía con la naturaleza.",
+      "La fitodermocosmética se centra en el cuidado de la piel utilizando ingredientes puros y respetuosos con el organismo. Tratamientos sencillos, efectivos y libres de químicos agresivos para mantener la piel saludable, luminosa y en armonía con la naturaleza.",
     delay: "animation-delay-400",
     image: "/images/card3.png",
     btnLabel: WHATSAPP_COSMETOLOGIA_LABEL,
@@ -46,7 +46,7 @@ const services = [
 
 export function ServicesSection() {
   return (
-    <section id="services" className="py-16 bg-background text-center items-center overflow-hidden">
+    <section id="services" className="pt-16 pb-8 bg-background text-center items-center overflow-hidden">
       <div className="container mx-auto px-4 md:px-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center">
           {services.map((service, index) => (

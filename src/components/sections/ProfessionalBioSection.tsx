@@ -18,12 +18,10 @@ export function ProfessionalBioSection() {
   return (
     <section
       id="professional"
-      className="relative min-h-screen flex flex-col justify-center items-center bg-background py-16"
+      className="relative min-h-screen flex flex-col justify-center items-center bg-background py-8"
     >
       <div className="container mx-auto px-4 flex flex-col items-center">
-        <h2 className="text-4xl md:text-5xl font-headline font-bold text-center mb-10 text-primary">
-          Sobre Mí
-        </h2>
+        
 
         <Card className="overflow-hidden shadow-xl w-full bg-card animate-fade-in-up opacity-0 
                         max-w-xl md:max-w-3xl lg:max-w-5xl">
