@@ -1,6 +1,4 @@
 import { KaunaLogo } from '@/components/icons/Logo';
-import { Facebook, Instagram, Twitter } from 'lucide-react';
-import { IgIcon } from '../icons/IgIcon';
 import { SocialLinks } from '../ui/socialButtons';
 
 

@@ -9,7 +9,7 @@ const about = [
       "Su enfoque combina sabiduría ancestral con conocimientos modernos, brindando tratamientos personalizados que nutren el cuerpo y la mente.",
       "Especializada en masajes faciales, fitoterapia y cosmetología natural, Alejandra ofrece un cuidado atento y adaptado a las necesidades únicas de cada cliente."
     ],
-    image: "/images/aboutmeBG.png",
+    image: "/images/aboutmeBG.webp",
     alt: "Fondo de texto sobre cosmética natural"
   }
 ];

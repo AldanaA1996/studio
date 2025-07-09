@@ -18,7 +18,7 @@ const services = [
     description:
       "Los masajes faciales son una técnica suave y profunda que estimula la circulación, relaja los músculos del rostro y ayuda a reducir signos de tensión. Además, favorecen la luminosidad natural de la piel, brindando una sensación de bienestar y frescura inmediata.",
     delay: "animation-delay-0",
-    image: "/images/card1.png",
+    image: "/images/card1.webp",
     btnLabel: WHATSAPP_MASAJE_LABEL,
     btnMessage: WHATSAPP_MASAJE_MESSAGE,
   },
@@ -28,7 +28,7 @@ const services = [
     description:
       "La fitoterapia utiliza el poder curativo de las plantas para promover el equilibrio y la salud integral. A través de infusiones, aceites y preparados naturales, buscamos apoyar los procesos del cuerpo y realzar la belleza desde el interior.",
     delay: "animation-delay-200",
-    image: "/images/card2.png",
+    image: "/images/card2.webp",
     btnLabel: WHATSAPP_FITOTERAPIA_LABEL,
     btnMessage: WHATSAPP_FITOTERAPIA_MESSAGE,
   },
@@ -38,7 +38,7 @@ const services = [
     description:
       "La fitodermocosmética se centra en el cuidado de la piel utilizando ingredientes puros y respetuosos con el organismo. Tratamientos sencillos, efectivos y libres de químicos agresivos para mantener la piel saludable, luminosa y en armonía con la naturaleza.",
     delay: "animation-delay-400",
-    image: "/images/card3.png",
+    image: "/images/card3.webp",
     btnLabel: WHATSAPP_COSMETOLOGIA_LABEL,
     btnMessage: WHATSAPP_COSMETOLOGIA_MESSAGE,
   },
