@@ -27,7 +27,7 @@ export function WhatsAppButton({
       onClick={handleWhatsAppRedirect}
       variant="default"
       size="lg"
-      className={`bg-accent hover:bg-accent/90 text-accent-foreground shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 ${className}`}
+      className={`bg-accent hover:bg-accent/90 text-accent-foreground hover:text-background shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 ${className}`}
     >
       <MessageCircle className="mr-2 h-8 w-8" />
       {label}

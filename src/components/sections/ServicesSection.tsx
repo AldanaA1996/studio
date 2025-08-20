@@ -48,11 +48,11 @@ export function ServicesSection() {
   return (
     <section id="services" className="pt-16 pb-8 bg-background text-center items-center overflow-hidden">
       <div className="container mx-auto px-4 md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch justify-items-center">
           {services.map((service, index) => (
-            <div key={index} className={`animate-fade-in-up ${service.delay} opacity-0`}>
+            <div key={index} className={`animate-fade-in-up ${service.delay} opacity-0 w-full max-w-sm`}>
               <Card
-                className="relative flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden w-full max-w-sm h-[550px] md:h-[600px]"
+                className="relative flex flex-col text-center shadow-lg hover:shadow-xl transition-shadow duration-300 rounded-lg overflow-hidden h-[550px] md:h-[600px]"
                 style={{
                   backgroundImage: `url(${service.image})`,
                   backgroundSize: "cover",
@@ -60,29 +60,38 @@ export function ServicesSection() {
                   backgroundRepeat: "no-repeat",
                 }}
               >
-                <div className="relative z-10 flex flex-col items-center justify-center flex-grow p-6 gap-6">
-                  {/* Icono + Título */}
-                  <div className="flex flex-col items-center space-y-2">
-                    {service.icon}
-                    <h3 className="text-4xl md:text-3xl font-headline font-light text-primary-foreground">
-                      {service.title}
-                    </h3>
-                  </div>
+                <div className="relative z-10 flex flex-col h-full p-8">
+                  {/* Spacer superior */}
+                  <div className="flex-1"></div>
+                  
+                  {/* Contenido centrado */}
+                  <div className="flex flex-col items-center justify-center space-y-6">
+                    {/* Icono + Título */}
+                    <div className="flex flex-col items-center space-y-3">
+                      {service.icon}
+                      <h3 className="text-3xl md:text-2xl lg:text-3xl font-headline font-light text-primary-foreground">
+                        {service.title}
+                      </h3>
+                    </div>
 
-                  {/* Descripción */}
-                  <div className="min-h-[180px] flex items-center justify-center w-full px-4">
-                    <p className="text-lg text-primary-foreground text-center">
-                      {service.description}
-                    </p>
-                  </div>
+                    {/* Descripción con altura fija */}
+                    <div className="h-[200px] flex items-center justify-center px-2">
+                      <p className="text-lg text-primary-foreground text-center leading-relaxed">
+                        {service.description}
+                      </p>
+                    </div>
 
-                  {/* Botón */}
-                  <WhatsAppButton
-                    phoneNumber={WHATSAPP_NUMBER}
-                    label={service.btnLabel}
-                    message={service.btnMessage}
-                    className="w-fit py-2 bg-primary text-primary-foreground"
-                  />
+                    {/* Botón */}
+                    <WhatsAppButton
+                      phoneNumber={WHATSAPP_NUMBER}
+                      label={service.btnLabel}
+                      message={service.btnMessage}
+                      className="w-fit py-2 bg-primary text-primary-foreground"
+                    />
+                  </div>
+                  
+                  {/* Spacer inferior */}
+                  <div className="flex-1"></div>
                 </div>
               </Card>
             </div>

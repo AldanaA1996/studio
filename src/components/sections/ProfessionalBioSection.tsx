@@ -5,9 +5,15 @@ const about = [
   {
     title: "Profesional en Cosmetología Natural",
     description: [
-      "Con más de 15 años de experiencia en terapias naturales y bienestar holístico, Alejandra Cattaneo se dedica a guiar a sus clientes hacia el rejuvenecimiento y el equilibrio integral.",
-      "Su enfoque combina sabiduría ancestral con conocimientos modernos, brindando tratamientos personalizados que nutren el cuerpo y la mente.",
-      "Especializada en masajes faciales, fitoterapia y cosmetología natural, Alejandra ofrece un cuidado atento y adaptado a las necesidades únicas de cada cliente."
+     "Soy Alejandra Goyeneche, cosmetóloga especializada en el cuidado integral y consciente de la piel. Mi enfoque combina técnicas naturales, masajes faciales y fitoterapia, trabajando desde adentro hacia afuera para realzar la belleza natural, aliviar tensiones y recuperar el equilibrio.",
+
+    "Mi camino comenzó durante la pandemia, cuando descubrí que las líneas de expresión no solo hablan del paso del tiempo, sino también de emociones y tensiones acumuladas. Esa curiosidad me llevó a formarme en Masaje Facial Estructural Profundo y a especializarme en cosmetología natural, incorporando siempre el respeto por la piel y el amor por las plantas.",
+
+    "Con el tiempo comprendí que muchas alteraciones cutáneas tienen su origen en desequilibrios internos —digestivos, hormonales, emocionales—, por lo que también me formé en Fitoterapia Aplicada para ofrecer un abordaje verdaderamente integral.",
+    
+    "Hoy acompaño a mujeres desde Kaûna, Estudio Cosmetológico Integral en Bragado, con sesiones personalizadas, protocolos de fitodermocosmética y asesorías presenciales u online de automasaje, cuidado facial y uso de plantas medicinales.",
+
+    "Creo profundamente que cuidar la piel es una forma de habitar el cuerpo con presencia, amor y respeto."
     ],
     image: "/images/aboutmeBG.webp",
     alt: "Fondo de texto sobre cosmética natural"
@@ -24,7 +30,7 @@ export function ProfessionalBioSection() {
         
 
         <Card className="overflow-hidden shadow-xl w-full bg-card animate-fade-in-up opacity-0 
-                        max-w-xl md:max-w-3xl lg:max-w-5xl">
+                         md:max-w-7xl ">
           <div className="flex flex-col md:flex-row">
 
             {/* Imagen */}
@@ -48,7 +54,8 @@ export function ProfessionalBioSection() {
               }}
             >
               <div className="absolute inset-0 "></div>
-              <div className="relative z-10 space-y-4 text-base md:text-lg leading-relaxed">
+
+              <div className="relative z-10 space-y-4 text-primary-foreground text-lg md:text-xl leading-relaxed max-h-[400px] overflow-y-auto pr-2">
                 {about[0].description.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
